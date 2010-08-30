@@ -11,7 +11,7 @@ xml.result do
 
   xml.content do
     xml.item :id => '1', :type => 'form' do
-      xml.text 'WAP. Entrez maintenant votre numéro de mobile pour faire péter la cash machine! Ex : 06xxxxxxxx'
+      xml.text "WAP. Entrez maintenant votre numéro de mobile pour faire péter la cash machine! Ex : 06xxxxxxxx"
       xml.inputs do
         xml.input :type => 'text', :name => 'V_MSISDN', :title => "Votre numéro", :value => "06", :maxlength => "12"
       end
