@@ -6,7 +6,7 @@ xml.result do
     xml.status 'MSG_2', :id => '7'
     xml.createddatetime Time.now
     xml.lasupdateddatetime Time.now
-    xml.service '2shotcounter', :id => '7525'
+    xml.service '2shotcounter', :id => @V_SERVICEID
   end
 
   xml.content do
