@@ -7,6 +7,7 @@ xml.result do
     xml.createddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
     xml.lasupdateddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
     xml.service '2shotcounter - fils wap', :id => @V_SERVICEID
+    xml.stopsession 'false'
   end
 
   xml.content do
