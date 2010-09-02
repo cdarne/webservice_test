@@ -5,7 +5,7 @@ xml.result do
   xml.session :id => '367416' do
     xml.status 'MSG_2', :id => '7'
     xml.createddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
-    xml.lasupdateddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
+    xml.lastupdateddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
     xml.service '2shotcounter - fils wap', :id => @V_SERVICEID
     xml.stopsession 'false'
   end
