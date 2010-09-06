@@ -10,4 +10,6 @@ module SMSAdminErrors
       @missing_parameters = missing_parameters
     end
   end
+
+  class WrongMSISDNFormat < StandardError; end
 end

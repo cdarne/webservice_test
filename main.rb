@@ -58,6 +58,11 @@ get '/GetNextStep' do
     e = SMSAdminErrors::MissingParameters.new(missing_parameters)
     raise e
   else
+    
+    if @V_MSISDN.gsub(/\s/, '') !~ /^(06|336)\d{8}$/
+      raise SMSAdminErrors::WrongMSISDNFormat
+    end
+    
     if params[:won]
       builder :get_next_step_won
     elsif params[:won_ask_address]
@@ -107,6 +112,10 @@ end
 error SMSAdminErrors::MissingParameters do
   @missing_parameters = request.env['sinatra.error'].missing_parameters
   builder :'errors/missing_parameters'
+end
+
+error SMSAdminErrors::WrongMSISDNFormat do
+  builder :'errors/wrong_msisdn_format'
 end
 
 error do
