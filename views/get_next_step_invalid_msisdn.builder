@@ -18,5 +18,4 @@ xml.result do
       end
     end
   end
-
 end
