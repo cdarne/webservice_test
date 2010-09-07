@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 xml.result do
-  xml.status 'OK'
+  xml.status 'KO'
   xml.reason "Invalid MSISDN #{@V_MSISDN}"
   xml.session :id => @V_SESSIONID do
     xml.status 'MSG_2', :id => '7'
