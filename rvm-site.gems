@@ -1,0 +1,11 @@
+# rvm-site.gems generated gem export file. Note that any env variable settings will be missing. Append these after using a ';' field separator
+activesupport -v3.0.0
+authlogic -v2.1.6
+builder -v2.1.2
+daemons -v1.1.0
+eventmachine -v0.12.10
+rack -v1.2.1
+rake -v0.8.7
+ruby-openid -v2.1.8
+sinatra -v1.0
+thin -v1.2.7
