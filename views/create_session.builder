@@ -3,7 +3,7 @@ require 'active_support/secure_random'
 xml.result do
   xml.status 'OK'
   xml.reason
-  xml.session :id => ActiveSupport::SecureRandom.hex do
+  xml.session :id => "TEST_#{ActiveSupport::SecureRandom.hex}" do
     xml.status 'MSG_2', :id => '7'
     xml.createddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
     xml.lastupdateddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
