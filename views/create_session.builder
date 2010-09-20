@@ -17,8 +17,9 @@ xml.result do
         xml.input :type => 'text', :name => 'V_MSISDN', :title => "Votre numéro", :value => "06xxxxxxxx", :maxlength => "12"
       end
     end
-    xml.item :id => "2", :type => "text" do
-      xml.text "pub 1"
+    xml.item :id => "2", :type => "link" do
+      xml.text "Pub ! Promo, cliques ici !"
+      xml.url "http://google.com"
     end
     xml.item :id => "3", :type => "text" do
       xml.text "pub 2"

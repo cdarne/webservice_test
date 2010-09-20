@@ -8,7 +8,7 @@ configure :development do
   disable :show_exceptions
 end
 
-$JEU_JACK = "7488"
+$JEU_JACK = "7732"
 $JEU_QUIZZ = "7489"
 
 before do
