@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
+require 'active_support/secure_random'
 xml.result do
   xml.status 'OK'
   xml.reason
-  xml.session :id => '367416' do
+  xml.session :id => ActiveSupport::SecureRandom.hex do
     xml.status 'MSG_2', :id => '7'
     xml.createddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
     xml.lastupdateddatetime Time.now.strftime("%Y/%m/%d %H:%M:%S")
