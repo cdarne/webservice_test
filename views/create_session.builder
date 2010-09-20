@@ -13,13 +13,13 @@ xml.result do
 
   xml.content do
     xml.item :id => '1', :type => 'form' do
-      xml.text "WAP. Entrez maintenant votre numéro de mobile pour faire péter la cash machine! Ex : 06xxxxxxxx"
+      xml.text "C'est cool :). Entrez maintenant votre numéro de mobile pour faire péter la cash machine! Ex : 06xxxxxxxx"
       xml.inputs do
         xml.input :type => 'text', :name => 'V_MSISDN', :title => "Votre numéro", :value => "06xxxxxxxx", :maxlength => "12"
       end
     end
     xml.item :id => "2", :type => "link" do
-      xml.text "Pub ! Promo, cliques ici !"
+      xml.text "Pub ! Promo, <clic' ici> !"
       xml.url "http://google.com"
     end
     xml.item :id => "3", :type => "text" do
